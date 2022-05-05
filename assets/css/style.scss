@@ -34,9 +34,9 @@ Default CSS
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 $body-font-family: 'Sarabun', sans-serif;
-$main-color: #567df4;
+$main-color: #26d09b;
 $white-color: #ffffff;
-$body-color: #7f7f7f;
+$body-color: #b9b9b9;
 $black-color: #242424;
 $transition: all 0.5s;
 
@@ -1510,7 +1510,6 @@ SEO Marketing CSS
                 right: 20px;
                 bottom: -10px;
                 border-radius: 10px;
-                box-shadow: 0px 0px 20px #7f7f7f;
                 animation: moveBounce 3s linear infinite;
             }
             .we-are-2 {
@@ -1518,7 +1517,6 @@ SEO Marketing CSS
                 left: 15px;
                 top: 50px;
                 border-radius: 10px;
-                box-shadow: 0px 0px 20px #7f7f7f;
                 animation: moveBounce 5s linear infinite;
             }
         }
@@ -1618,8 +1616,8 @@ SEO Marketing CSS
         &:hover {
             .price-btn {
                 .bg-color {
-                    background-color: #ffba00;
-                    border: 1px solid #ffba00;
+                    background-color: #687ae3;
+                    border: 1px solid #687ae3;
                 }
             }
         }
@@ -3340,7 +3338,7 @@ App Landing CSS
         transform: translateY(0px); 
     }
     50% {
-        transform: translateY(20px); 
+        transform: translateY(40px);
     }
     100% {
         transform: translateY(0px); 
@@ -3351,7 +3349,7 @@ App Landing CSS
         transform: translateX(0); 
     }
     50% {
-        transform: translateX(5px); 
+        transform: translateX(7px);
     }
     100% {
         transform: translateX(0); 
