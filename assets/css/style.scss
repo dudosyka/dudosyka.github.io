@@ -984,7 +984,7 @@ Saas Landing CSS
 
 /* Footer Area CSS */
 .footer-area {
-    background-color: $main-color;
+    //background-color: $ main-color;
     &.bor-radius-right {
         border-radius: 0px 130px 0px 0px;
     }
@@ -1090,7 +1090,7 @@ Saas Landing CSS
         padding: 25px 0;
         border-top: 1px solid #6b8df5;
         p {
-            color: $white-color;
+            color: $black-color;
             a {
                 color: #f5d150;
                 &:hover {
