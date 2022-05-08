@@ -1270,7 +1270,8 @@ SEO Marketing CSS
 
 /* Seo banner Area */
 .seo-banner-area {
-    background-color: #f6f4ff;
+    background: url('../images/Hero-min.jpg');
+    background-size: contain;
     padding-top: 180px;
     position: relative;
     overflow-x: hidden;
@@ -1289,6 +1290,7 @@ SEO Marketing CSS
         }
         p {
             font-size: 20px;
+            color: #0b0b0b !important;
         }
         .seo-banner-btn {
             margin-top: 30px;
@@ -1387,11 +1389,7 @@ SEO Marketing CSS
             }
         }
         &:hover {
-            background-color: $main-color;
             .bg-3 {
-                i {
-                    color: $white-color;
-                }
             }
             .icon {
                 color: $white-color;
@@ -1404,12 +1402,6 @@ SEO Marketing CSS
                 &.bg-3 {
                     background-color: #809ef7;
                 }
-            }
-            h3 {
-                color: $white-color;
-            }
-            p {
-                color: #f9f9fb;
             }
         }
     }
@@ -2575,14 +2567,14 @@ Personal Portfolio CSS
 
 /* Fun Facts Area */
 .fun-facts-area {
-    background-image: url('../images/portfolio/fun-fact.jpg');
+    background-image: url('../images/Frame 39668 (2).jpg');
     background-size: cover;
     background-position: center center;
     position: relative;
     &::before {
         content: '';
         position: absolute;
-        background-color: rgba(86, 40, 179, 0.75);
+        //background-color: rgba(86, 40, 179, 0.75);
         width: 100%;
         height: 100%;
         top: 0;
@@ -3217,6 +3209,11 @@ App Landing CSS
     animation-duration: 40s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+
+.directions {
+    background: url("../images/directions.png");
+    background-size: cover;
 }
 
 .directions p {

@@ -965,7 +965,8 @@ SEO Marketing CSS
 
 /* Seo banner Area */
 .seo-banner-area {
-  background-color: #f6f4ff;
+  background: url("../images/Hero-min.jpg");
+  background-size: contain;
   padding-top: 180px;
   position: relative;
   overflow-x: hidden;
@@ -980,7 +981,8 @@ SEO Marketing CSS
     font-size: 70px;
     margin-bottom: 35px; }
   .seo-banner-area .seo-banner-text p {
-    font-size: 20px; }
+    font-size: 20px;
+    color: #0b0b0b !important; }
   .seo-banner-area .seo-banner-text .seo-banner-btn {
     margin-top: 30px; }
     .seo-banner-area .seo-banner-text .seo-banner-btn .seo-btn-bg1 {
@@ -1049,22 +1051,14 @@ SEO Marketing CSS
   transition: all 0.5s; }
   .seo-services-area-1 .seo-services-1 .bg-3 i {
     color: #f47456; }
-  .seo-services-area-1 .seo-services-1:hover {
-    background-color: #26d09b; }
-    .seo-services-area-1 .seo-services-1:hover .bg-3 i {
-      color: #ffffff; }
-    .seo-services-area-1 .seo-services-1:hover .icon {
-      color: #ffffff; }
-      .seo-services-area-1 .seo-services-1:hover .icon.bg-1 {
-        background-color: #809ef7; }
-      .seo-services-area-1 .seo-services-1:hover .icon.bg-2 {
-        background-color: #809ef7; }
-      .seo-services-area-1 .seo-services-1:hover .icon.bg-3 {
-        background-color: #809ef7; }
-    .seo-services-area-1 .seo-services-1:hover h3 {
-      color: #ffffff; }
-    .seo-services-area-1 .seo-services-1:hover p {
-      color: #f9f9fb; }
+  .seo-services-area-1 .seo-services-1:hover .icon {
+    color: #ffffff; }
+    .seo-services-area-1 .seo-services-1:hover .icon.bg-1 {
+      background-color: #809ef7; }
+    .seo-services-area-1 .seo-services-1:hover .icon.bg-2 {
+      background-color: #809ef7; }
+    .seo-services-area-1 .seo-services-1:hover .icon.bg-3 {
+      background-color: #809ef7; }
 
 /* About Us Area */
 .about-us-area .about-us-img {
@@ -1932,14 +1926,13 @@ Personal Portfolio CSS
 
 /* Fun Facts Area */
 .fun-facts-area {
-  background-image: url("../images/portfolio/fun-fact.jpg");
+  background-image: url("../images/Frame 39668 (2).jpg");
   background-size: cover;
   background-position: center center;
   position: relative; }
   .fun-facts-area::before {
     content: '';
     position: absolute;
-    background-color: rgba(86, 40, 179, 0.75);
     width: 100%;
     height: 100%;
     top: 0;
@@ -2422,6 +2415,10 @@ App Landing CSS
   animation-duration: 40s;
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
+
+.directions {
+  background: url("../images/directions.png");
+  background-size: cover; }
 
 .directions p {
   color: #0b0b0b; }
