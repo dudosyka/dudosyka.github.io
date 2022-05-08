@@ -1926,13 +1926,13 @@ Personal Portfolio CSS
 
 /* Fun Facts Area */
 .fun-facts-area {
-  background-image: url("../images/Frame 39668 (2).jpg");
   background-size: cover;
   background-position: center center;
   position: relative; }
   .fun-facts-area::before {
     content: '';
     position: absolute;
+    background-color: #ffffff;
     width: 100%;
     height: 100%;
     top: 0;
@@ -1962,10 +1962,10 @@ Personal Portfolio CSS
         color: #ffae95; }
     .fun-facts-area .single-fun-facts h3 {
       font-size: 44px;
-      color: #ffffff; }
+      color: #5D5FEF; }
     .fun-facts-area .single-fun-facts p {
       font-size: 16px;
-      color: #ffffff; }
+      color: #5D5FEF; }
 
 /* Choose Us two Area */
 .choose-area {
