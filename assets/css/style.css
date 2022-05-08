@@ -2417,11 +2417,11 @@ App Landing CSS
   animation-timing-function: linear; }
 
 .directions {
-  background: url("../images/directions.png");
+  background: url("../images/directions_bg.jpg");
   background-size: cover; }
 
-.directions p {
-  color: #0b0b0b; }
+.directions .row div {
+  backdrop-filter: blur(5px); }
 
 .directions ul {
   margin: 0 !important;
