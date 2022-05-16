@@ -368,11 +368,13 @@ Saas Landing CSS
 /* Paricing Area */
 .prising-card {
   padding: 30px 20px;
-  box-shadow: 0px 0px 20px #eeeeee;
+  /*box-shadow: 0px 0px 20px #eeeeee;*/
   border-radius: 10px;
   border: 1px solid #e1e1e1;
   transition: all 0.5s;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  background-color: #FFFFFF;
+}
   .prising-card .price-header {
     padding-bottom: 20px;
     border-bottom: 1px solid #e1e1e1;
@@ -393,7 +395,6 @@ Saas Landing CSS
     list-style-type: none; }
     .prising-card ul li {
       font-size: 18px;
-      color: #242424;
       margin-bottom: 5px;
       position: relative;
       padding-left: 30px;
@@ -423,9 +424,11 @@ Saas Landing CSS
     background-color: #26d09b;
     margin-top: -8px; }
     .prising-card:hover .price-header, .prising-card.active .price-header {
-      border-bottom: 1px solid #809bee; }
+      border-bottom: 1px solid #809bee;
+    }
       .prising-card:hover .price-header h3, .prising-card.active .price-header h3 {
-        color: #ffffff; }
+        color: #ffffff;
+      }
       .prising-card:hover .price-header h4, .prising-card.active .price-header h4 {
         color: #ffffff; }
       .prising-card:hover .price-header p, .prising-card.active .price-header p {
@@ -963,7 +966,7 @@ SEO Marketing CSS
 
 /* Seo banner Area */
 .seo-banner-area {
-  background: url("../images/Hero-min.jpg");
+  background: url("../../main.jpg");
   background-size: contain;
   padding-top: 180px;
   position: relative;
@@ -1116,7 +1119,6 @@ SEO Marketing CSS
   .who-we-area .who-we-are-img::before {
     content: '';
     position: absolute;
-    background-color: #f5f4ff;
     top: 0;
     left: 0;
     width: 100%;
@@ -1132,6 +1134,7 @@ SEO Marketing CSS
     animation: moveBounce 3s linear infinite; }
   .who-we-area .who-we-are-img .we-are-img .we-are-2 {
     position: absolute;
+    z-index: -1;
     left: 15px;
     top: 50px;
     border-radius: 10px;
@@ -1205,6 +1208,15 @@ SEO Marketing CSS
     background-color: rgba(255, 255, 255, 0.46); }
 
 /* Our Pricing Area */
+.our-pricing-area {
+  background: url("../../pricing_bg.jpg");
+  background-size: cover;
+}
+
+.our-pricing-area h2 {
+  color: #9fcdff;
+}
+
 .our-pricing-area .pric-tabe:hover .price-btn .bg-color {
   background-color: #687ae3;
   border: 1px solid #687ae3; }
@@ -1214,7 +1226,9 @@ SEO Marketing CSS
   padding: 0;
   margin: 0 0 40px;
   list-style-type: none;
-  position: relative; }
+  position: relative;
+  color: #9fcdff !important;
+}
   .pricing-tab .tabs li {
     padding: 0;
     margin: 0;
@@ -1223,14 +1237,14 @@ SEO Marketing CSS
     border-radius: 30px;
     padding: 15px 35px;
     transition: all 0.5s;
-    box-shadow: 0px 10px 20px 1px #e0dddd;
     background-color: #ffffff;
     color: #26d09b;
     position: relative;
     z-index: 2; }
     .pricing-tab .tabs li.current {
       background-color: #26d09b;
-      color: #ffffff; }
+      color: #ffffff;
+    }
     .pricing-tab .tabs li.save-card {
       position: absolute;
       background-color: #242424;
@@ -2415,8 +2429,8 @@ App Landing CSS
   animation-timing-function: linear; }
 
 .directions {
-  background: url("../images/directions_bg.jpg");
-  background-size: cover; }
+  background: url("../../bubbles.jpg");
+  background-size: contain; }
 
 .directions .row div {
   backdrop-filter: blur(5px); }

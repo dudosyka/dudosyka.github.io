@@ -1486,7 +1486,6 @@ SEO Marketing CSS
         &::before {
             content: '';
             position: absolute;
-            background-color: #f5f4ff;
             top: 0;
             left: 0;
             width: 100%;
@@ -1506,6 +1505,7 @@ SEO Marketing CSS
             }
             .we-are-2 {
                 position: absolute;
+                z-index: -1;
                 left: 15px;
                 top: 50px;
                 border-radius: 10px;
@@ -1604,6 +1604,8 @@ SEO Marketing CSS
 
 /* Our Pricing Area */
 .our-pricing-area {
+    background: url("../../pricing_bg.jpg");
+    background-size: cover;
     .pric-tabe {
         &:hover {
             .price-btn {
@@ -3212,8 +3214,8 @@ App Landing CSS
 }
 
 .directions {
-    background: url("../images/directions_bg.jpg");
-    background-size: cover;
+    background: url("../../bubbles.jpg");
+    background-size: contain;
 }
 
 .directions .row div {
