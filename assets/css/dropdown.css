@@ -1,0 +1,199 @@
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+::-moz-selection {
+    background-color: #9A68FF;
+    color: #fff
+}
+
+::selection {
+    background-color: #9A68FF;
+    color: #fff
+}
+
+.everything {
+    position: relative;
+}
+
+.everything__checkbox {
+    display: none
+}
+
+.everything .everything__button,
+.everything .everything__link {
+    width: 12rem;
+    padding: 0.75rem 2rem;
+    display: inline-block;
+    background-color: #26d09b;
+    /*background-image: radial-gradient(circle at 50%, #9A68FF 0%, #D612A2 100%);*/
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.1rem;
+    border-radius: 0.3rem;
+    cursor: pointer
+}
+
+.everything__button {
+    position: relative;
+    z-index: 100;
+    box-shadow: 0 0.25rem 2rem rgba(0, 0, 0, 0.35), inset 0 0.25rem 1rem rgba(0, 0, 0, 0);
+    transition: background-position-y .2s .2s, color 1s, box-shadow .2s
+}
+
+.everything__button:hover {
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.15)
+}
+
+.everything__button:active,
+.everything__button:focus {
+    box-shadow: 0 0.25rem 2rem rgba(0, 0, 0, 0), inset 0 0.25rem 1rem rgba(0, 0, 0, 0.25)
+}
+
+.everything__button::before {
+    content: "Sign up!"
+}
+
+.everything__checkbox:checked~.everything__button {
+    color: #707070;
+    background-position-y: -210%;
+    box-shadow: 0 0.25rem 2rem rgba(0, 0, 0, 0), inset 0 0.25rem 1rem rgba(0, 0, 0, 0.25)
+}
+
+.everything__checkbox:checked~.everything__button::before {
+    content: "Close";
+    padding: .75rem 1.6rem
+}
+
+.everything__link-area {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    transition: -webkit-transform 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.5s cubic-bezier(1, 0, 0, 1), -webkit-transform 0.5s cubic-bezier(1, 0, 0, 1)
+}
+
+.everything__link {
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+.everything__link:link,
+.everything__link:visited {
+    text-decoration: none
+}
+
+.everything__link:active,
+.everything__link:focus {
+    box-shadow: inset 0 0.25rem 1rem rgba(0, 0, 0, 0.25)
+}
+
+.everything__link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s
+}
+
+.everything__link--1 {
+    z-index: 300;
+    transition: padding 0.2s 0.2s, box-shadow 0.2s, -webkit-transform 0.2s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.2s cubic-bezier(1, 0, 0, 1), padding 0.2s 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s cubic-bezier(1, 0, 0, 1), padding 0.2s 0.2s, box-shadow 0.2s, -webkit-transform 0.2s cubic-bezier(1, 0, 0, 1)
+}
+
+.everything__link--2 {
+    background-position: 50%;
+    background-size: 250%;
+    z-index: 200;
+    transition: padding 0.2s 0.2s, box-shadow 0.2s, -webkit-transform 0.2s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.2s cubic-bezier(1, 0, 0, 1), padding 0.2s 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s cubic-bezier(1, 0, 0, 1), padding 0.2s 0.2s, box-shadow 0.2s, -webkit-transform 0.2s cubic-bezier(1, 0, 0, 1)
+}
+
+.everything__link--3 {
+    background-position: 100%;
+    z-index: 100;
+    transition: padding 0.2s 0.2s, box-shadow 0.2s, -webkit-transform 0.2s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.2s cubic-bezier(1, 0, 0, 1), padding 0.2s 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s cubic-bezier(1, 0, 0, 1), padding 0.2s 0.2s, box-shadow 0.2s, -webkit-transform 0.2s cubic-bezier(1, 0, 0, 1)
+}
+
+.everything__checkbox:checked~.everything__link-area {
+    z-index: 1;
+    -webkit-transform: translateY(8rem);
+    transform: translateY(8rem);
+    transition: -webkit-transform 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.5s cubic-bezier(1, 0, 0, 1), -webkit-transform 0.5s cubic-bezier(1, 0, 0, 1)
+}
+
+.everything__checkbox:checked~.everything__link-area .everything__link {
+    visibility: visible;
+    opacity: 1;
+    padding: 1.75rem 2.75rem
+}
+
+.everything__checkbox:checked~.everything__link-area .everything__link::after {
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 0 0.25rem 2rem rgba(0, 0, 0, 0.35);
+    transition: opacity 3s, box-shadow .2s
+}
+
+.everything__checkbox:checked~.everything__link-area .everything__link:hover::after {
+    /*box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.15)*/
+}
+
+.everything__checkbox:checked~.everything__link-area .everything__link--1 {
+    transition: padding 0.2s 0.2s, -webkit-transform 0.2s 0.8s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.2s 0.8s cubic-bezier(1, 0, 0, 1), padding 0.2s 0.2s;
+    transition: transform 0.2s 0.8s cubic-bezier(1, 0, 0, 1), padding 0.2s 0.2s, -webkit-transform 0.2s 0.8s cubic-bezier(1, 0, 0, 1);
+    -webkit-transform: translateX(-15rem);
+    transform: translateX(-15rem)
+}
+
+@media only screen and (max-width: 480px) {
+    .everything__checkbox:checked~.everything__link-area .everything__link--1 {
+        -webkit-transform: translateX(0) translateY(-14rem);
+        transform: translateX(0) translateY(-14rem)
+    }
+}
+
+.everything__checkbox:checked~.everything__link-area .everything__link--2 {
+    transition: padding 0.2s 0.2s, -webkit-transform 0.2s 0.7s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.2s 0.7s cubic-bezier(1, 0, 0, 1), padding 0.2s 0.2s;
+    transition: transform 0.2s 0.7s cubic-bezier(1, 0, 0, 1), padding 0.2s 0.2s, -webkit-transform 0.2s 0.7s cubic-bezier(1, 0, 0, 1);
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+}
+
+.everything__checkbox:checked~.everything__link-area .everything__link--3 {
+    -webkit-transform: translateX(15rem);
+    transform: translateX(15rem);
+    transition: padding 0.2s 0.2s, -webkit-transform 0.2s 0.8s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.2s 0.8s cubic-bezier(1, 0, 0, 1), padding 0.2s 0.2s;
+    transition: transform 0.2s 0.8s cubic-bezier(1, 0, 0, 1), padding 0.2s 0.2s, -webkit-transform 0.2s 0.8s cubic-bezier(1, 0, 0, 1)
+}
+
+@media only screen and (max-width: 480px) {
+    .everything__checkbox:checked~.everything__link-area .everything__link--3 {
+        -webkit-transform: translateX(0) translateY(7rem);
+        transform: translateX(0) translateY(7rem)
+    }
+}
